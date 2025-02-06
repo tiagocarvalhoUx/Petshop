@@ -22,7 +22,10 @@ export function Hero() {
       <div className="container mx-auto pt-16 pb-16 mb:pd-0 px-4 relative">
         <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative">
           <div className="space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+            <h1
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
+                data-aos="zoom-in"
+            >
               Seu Pet merece cuidado, carinho e atenção especial.
             </h1>
 
@@ -43,10 +46,12 @@ export function Hero() {
             </div>
 
             <a
-              href="https://api.whatsapp.com/send?phone=5518981142927&fbclid=PAZXh0bgNhZW0CMTEAAaY0O7hu82GOFDet5PSotsr4zKLGsJ9AuoB-dCI40nYWGex58iUuiFjVFCw_aem_h0LLlP5qhBf-KgBz1f_ROg"
+              href={`https://wa.me//5518981142927?text=Olá vim pelo site e gostaria de mais informações`}
               className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center
             justify-center w-fit gap-2"
-             target="_blank"
+              target="_blank"
+              data-aos="fade-right"
+              data-aos-delay="500"
             >
               <WhatsappLogo className="w-5 h-5" />
               Contato via Whatsapp

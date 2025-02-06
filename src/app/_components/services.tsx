@@ -83,7 +83,10 @@ export function Services() {
                   key={index}
                   className=" flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3"
                 >
-                  <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
+                  <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
+                  >
                     <div className="flex-1 flex items-start justify-between">
                       <div className="flex gap-3">
                         <span className="text-3xl">{item.icon}</span>
@@ -104,7 +107,7 @@ export function Services() {
                         <span>{item.duration}</span>
                       </div>
                       <a
-                        href="https://api.whatsapp.com/send?phone=5518981142927&fbclid=PAZXh0bgNhZW0CMTEAAaY0O7hu82GOFDet5PSotsr4zKLGsJ9AuoB-dCI40nYWGex58iUuiFjVFCw_aem_h0LLlP5qhBf-KgBz1f_ROg"
+                        href={`https://wa.me//5518981142927?text=Olá vim pelo site e gostaria de mais sobre ${item.title}`}
                         target="_blank"
                         className="flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-500"
                       >

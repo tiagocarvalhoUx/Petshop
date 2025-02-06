@@ -59,8 +59,12 @@ export function Footer() {
               Cuidando do seu melhor amigo com amor e dedicação.
             </p>
             <a
-              href={`https://wa.me//5518981142927?text=Olá vim pelo site e gostaria de mais informações`}              target="_blank"
+              href={`https://wa.me//5518981142927?text=Olá vim pelo site e gostaria de mais informações`}
+              target="_blank"
               className="bg-green-500 px-4 py-2 rounded-md"
+              data-aos="zoom-in"
+               data-aos-delay="500"
+              
             >
               Contato via WhatsApp
             </a>
